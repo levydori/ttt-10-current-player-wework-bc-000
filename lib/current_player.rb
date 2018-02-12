@@ -1,6 +1,6 @@
 def turn_count(board)
   count = 0
-  each.board do | turn |
+  board.each do | turn |
     if ![" ", "", nil].include?(turn)
       count +=  1
     end
